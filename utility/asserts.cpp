@@ -25,6 +25,7 @@
 #include "ompdefs.h" // for omp_get_thread_num
 #include <iostream>
 #include "asserts.h"
+#include "errors.h"
 
 void assert_error(const char *file, int line, const char *func, const char *op, const char *lhs_str, const char *rhs_str, double lhs, double rhs) {
 
@@ -182,4 +183,3 @@ int fcmp(double x1, double x2, double epsilon)
   else /* -delta <= difference <= delta */
     return 0;  /* x1 == x2 */
 }
-

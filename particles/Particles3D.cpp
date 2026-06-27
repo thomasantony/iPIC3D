@@ -766,7 +766,7 @@ void Particles3D::mover_PC_AoS(Field * EMf)
 		{
 		  bool cap = (abs(uavg)>umax || abs(vavg)>vmax || abs(wavg)>wmax)? true : false;
 		  // we could do something more smooth or sophisticated
-		  if(builtin_expect(cap,false))
+		  if(__builtin_expect(cap,false))
 		  {
 			if(true)
 			{
